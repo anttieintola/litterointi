@@ -41,7 +41,7 @@ button {
 button:hover {
     color: #2d63c8;
     background-color: #ffffff;
-	border: 1px solid black;
+	border: 5px solid black;
 }
 .sizeButton {
     border-radius: 50%;

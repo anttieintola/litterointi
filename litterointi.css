@@ -12,7 +12,6 @@ body {
 	width: 100%;
 	background-color: white;
 	z-index: 5;
-border: 1px solid red;
 }
 
 #audioContainer
@@ -42,6 +41,7 @@ button {
 button:hover {
     color: #2d63c8;
     background-color: #ffffff;
+	border: 1px solid black;
 }
 .sizeButton {
     border-radius: 50%;

@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	background-color: white;
 	z-index: 5;
-border: 1px solid black;
+	border: 1px solid black;
 }
 
 #audioContainer

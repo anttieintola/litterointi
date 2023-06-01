@@ -1,0 +1,307 @@
+body {
+     font-family: Arimo, Arial;
+     font-size: 1em;
+     margin: 2.2em;
+     background-color: #1f2127;
+}
+ ::selection {
+     background: #a1400b;
+}
+ #controlsContainer {
+     text-align: left;
+     position: fixed;
+     top:0;
+     left:0;
+     width: 100%;
+     color: #b1b5ca;
+     background-color: #292a31;
+     z-index: 5;
+     border-radius: 5px;
+     padding: 1em;
+     margin-top:-1em;
+}
+ #audioContainer {
+     text-align: left;
+     margin-left: 0em;
+}
+/* #waveTCcontainer {
+     width: 90%;
+     height: 30px;
+     position: absolute;
+     top: 20px;
+     left: 50px;
+     text-align: center;
+}
+ */
+ #waveTCcontainer {
+     position: absolute;
+     top: 30px;
+     text-align: center;
+	 display: none;
+}
+
+ .playpause-icon {
+     font-size: 40px;
+     color: #aab1b5;
+}
+ #waveTC {
+	 margin-left: 50px;
+     text-align: center;
+     font-family: 'Inconsolata', monospace;
+	 background-color: #292a31;
+}
+ input[type="file"] {
+     display: none;
+}
+ #openFile {
+     width: 20px;
+     cursor: pointer;
+}
+ #waveform {
+     visibility: hidden;
+     height: 0;
+	 position: relative;
+	 left: 50px;
+     width: 80%;
+}
+ #controls {
+     height: 70px;
+     margin-top: 1em;
+}
+ #textControls {
+     margin-top: 1em;
+     float: left;
+}
+ button {
+     color: #33353d;
+     background-color: #808499;
+     font-size: 16px;
+     border: 1px solid black;
+     padding: 5px 5px;
+     cursor: pointer;
+}
+ button:hover {
+     color: #33353d;
+     background-color: #b1b5ca;
+}
+ .sizeButton {
+     border-radius: 50%;
+     font-size: 15px;
+     font-weight: bold;
+     width: 30px;
+     height: 30px;
+}
+ .btn {
+     font-size: 12px;
+     border-radius: 5px;
+     font-weight: bold;
+}
+ #timeContainer {
+     font-family: 'Inconsolata', monospace;
+     display: inline-block;
+     text-align: center;
+     margin-left: 3em;
+	 
+}
+ #timecode {
+     font-weight: bold;
+     font-size: 2em;
+     letter-spacing:-1px;
+	 border-left: 1px solid #a1400b; padding-left: 0.2em; padding-right: 0.2em; border-radius: 5px;border-right: 1px solid #a1400b;
+}
+ #rangeCode {
+     visibility: hidden;
+	 font-style: italic;
+}
+ #clipList {
+     width:350px;
+     position: fixed;
+     top: 120px;
+     right: 0px;
+}
+
+ #playpause {
+     background-color: transparent;
+     width: 80px;
+     visibility: hidden;
+     position: absolute;
+     left: 700px;
+     border:0;
+	 padding: 0;
+	 margin:0;
+}
+#playpausespan
+{
+	padding: 0;
+}
+
+#quickexport
+{    background-color: transparent;
+float: right;
+     border:0;
+	 padding: 0;
+	 margin-right:40px;
+	 visibility: hidden;
+	 }
+.quickexport-icon{
+     font-size: 30px;
+     color: #aab1b5;
+}
+
+#helplink:link {
+  color: #b1b5ca;
+}
+#helplink:visited {
+  color: #b1b5ca;
+}
+#helplink:hover {
+  color: #b1b5ca;
+}
+#helplink:active {
+  color: #b1b5ca;
+}
+
+#helplink
+{
+float: right;
+margin-right: 20px;
+cursor: pointer;	
+}
+
+#helpbutton
+{}
+
+ #content {
+     position: absolute;
+     margin-top: 80px;
+     color: #aab1b5;
+}
+ .klipit {
+     font-size: 10px;
+     font-weight: bold;
+     margin-right: 0.5em;
+	 float: left;
+}
+.saveicon
+{
+font-size: 25px;
+margin-left: 110px;
+cursor: pointer;}
+
+ #slippylist {
+     font-size: 12px;
+}
+ li {
+     list-style-type: none;
+     margin-bottom: 1em;
+     margin-left: -2em;
+}
+ [contenteditable] {
+     outline: 0px solid transparent;
+}
+ .selectRange {
+     cursor: pointer;
+}
+ .li-img-container {
+     display: inline-block;
+}
+ .li-txt-container {
+     margin-left: 15px;
+     display: inline-block;
+}
+.slip-reordering {
+    
+	box-shadow: -3px 0px 0px 0px orange, 3px 0px 0px 0px orange;
+	cursor: n-resize;
+}
+#loaderContainer
+{
+	position: absolute;
+	top: 30px;
+	left: 600px;
+	visibility: hidden;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #aab1b5;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: purple transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+#modalbg
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 10;
+	text-align: center;
+	display: none;}
+
+#modalcontent
+{
+	width: 400px;
+	height: 250px;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	padding: 2em;
+}
+
+.clipNames
+{
+	font-size: 10px;
+}
+
+.clipText
+{
+width: 100px;
+display: inline-block;}
+	
+	
+.modalButton {
+color: #ffffff;
+background-color: #165ea7;
+font-size: 15px;
+padding: 3px 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+.modalButton:hover {
+color: #2d63c8;
+background-color: #ffffff;
+}
+ 

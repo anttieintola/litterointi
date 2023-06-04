@@ -425,7 +425,7 @@ var wavesurfer = WaveSurfer.create({
 	showTime: true
 });
 
-const wsRegions = ws.registerPlugin(RegionsPlugin.create())
+const wsRegions = wavesurfer.registerPlugin(RegionsPlugin.create())
 
 audio_file.onchange = function() {
   var files = this.files;

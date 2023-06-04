@@ -422,10 +422,7 @@ var wavesurfer = WaveSurfer.create({
 	barHeight: 5,
 	cursorColor: "#b2ff19",
 	responsive: true,
-	showTime: true,
-	plugins: [
-        WaveSurfer.regions.create({})
-    ]
+	showTime: true
 });
 
 const wsRegions = ws.registerPlugin(RegionsPlugin.create())

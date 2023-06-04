@@ -15,7 +15,7 @@ var textsArray;
 var textText;
 var clipboardText;
 var srtFileContents;
-
+ 
 var playClicked;
 var wordTimeArray = [];
 var spans = document.getElementsByClassName("word");

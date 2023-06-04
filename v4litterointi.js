@@ -15,6 +15,9 @@ var textsArray;
 var textText;
 var clipboardText;
 var srtFileContents;
+
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@beta'
+import RegionsPlugin from 'https://unpkg.com/wavesurfer.js@beta/dist/plugins/regions.js'
  
 var playClicked;
 var wordTimeArray = [];

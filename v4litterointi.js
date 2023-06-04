@@ -74,7 +74,7 @@ function getRange() {
 	
 	waveIn = audioSeconds = (timecode_to_frames(startTC) / 25);
 	waveOut = audioSeconds = (timecode_to_frames(endTC) / 25);
-	wavesurfer.addRegion({
+	wsRegions.addRegion({
 		start: waveIn,
 		end: waveOut,
 		drag: false,
@@ -428,6 +428,7 @@ var wavesurfer = WaveSurfer.create({
     ]
 });
 
+const wsRegions = ws.registerPlugin(RegionsPlugin.create())
 
 audio_file.onchange = function() {
   var files = this.files;
